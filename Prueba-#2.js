@@ -37,7 +37,6 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
     z: 26,
   };
 
-  const test = {};
   let sum = 0;
 
   for (let i = 0; i < textos.length; i++) {
@@ -46,10 +45,8 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
       sum += abecedario[textos[i][r]];
     }
     if (sum == 319) {
-      test[textos[i]] = sum;
+      console.log(`"${textos[i]}" unica palabra con la suma de: ${sum} `);
       break;
     }
   }
-
-  console.log(test);
 });

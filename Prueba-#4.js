@@ -51,10 +51,10 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
 
   for (let property in listGroup) {
     if (listGroup[property] > 1921) {
-      resultFinal[property] = listGroup[property];
+      console.log(
+        `"${property}" es la suma de letras mas comun con unas "${listGroup[property]}" palabras`
+      );
       break;
     }
   }
-
-  console.log(resultFinal);
 });
