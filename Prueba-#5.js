@@ -57,8 +57,8 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
   for (let property in listGroup) {
     for (let i = 0; i < listGroup[property].length; i++) {
       for (let r = 0; r < listGroup[property].length; r++) {
-        dif1 = listGroup[property][i]?.length;
-        dif2 = listGroup[property][r]?.length;
+        dif1 = listGroup[property][i].length;
+        dif2 = listGroup[property][r].length;
         dif = dif1 + dif2 - dif1 - 11;
 
         if (dif == dif1) {
