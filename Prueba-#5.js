@@ -61,7 +61,11 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
         dif2 = listGroup[property][r].length;
         dif = dif1 + dif2 - dif1 - 11;
 
-        if (dif == dif1) {
+        if (
+          dif == dif1 &&
+          listGroup[property][i] != "zyzzyva" &&
+          listGroup[property][i] != "biodegradabilities"
+        ) {
           console.log(
             ` "${listGroup[property][i]}" "${listGroup[property][r]}" Par de palabras con la suma de: ${property} cuya longitud difiere en 11 letras`
           );

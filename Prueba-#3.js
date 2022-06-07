@@ -51,5 +51,7 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
       count += 1;
     }
   }
+  
   console.log(`${count} Palabras tienen una suma de letras impares`);
+ 
 });

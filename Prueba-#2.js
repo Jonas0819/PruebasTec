@@ -47,6 +47,7 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
     }
     if (sum == 319) {
       test[textos[i]] = sum;
+      break;
     }
   }
 
