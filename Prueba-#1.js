@@ -38,7 +38,7 @@ function lettersum(string) {
   return { [string]: sum };
 }
 
-
+console.log(lettersum(""));
 console.log(lettersum("a"));
 console.log(lettersum("z"));
 console.log(lettersum("cab"));
