@@ -88,8 +88,9 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
     (acc, val) => (acc.length > val.length ? acc : val),
     ""
   );
- 
-  listMayor.map((v)=>{ result.push(lettersum(v)); });
-  console.log(result)
 
+  listMayor.map((v) => {
+    result.push(lettersum(v));
+  });
+  console.log(result);
 });
