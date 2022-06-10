@@ -65,7 +65,6 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
           console.log(
             `${property} ${listGroup[property][r]} ${listGroup[property][i]}`
           );
-          break;
         }
       }
     }
