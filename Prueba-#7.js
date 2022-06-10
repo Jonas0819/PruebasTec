@@ -79,7 +79,7 @@ fs.readFile("api-data.txt", "utf8", (error, data) => {
         ""
       );
       if (findM) {
-        arrays[prop].push(findM);
+        arrays[prop]?.push(findM);
       }
     }
   }
